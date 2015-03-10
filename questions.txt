@@ -1,0 +1,19 @@
+0.  How many different colors does each format support? A 32bpp BMP and PNG file contains 4,294,967,296 distinct colors. A GIF files supports 8bpp and 256 colors. A JPEG supports 24bpp and 16,777,216 distinct colors.  
+1.  Which of these formats supports animation? GIF
+2.  What’s the difference between lossy and lossless compression? Lossy compression produce a smaller compressed file than lossless. 
+3.  Which of these formats is lossy-compressed? JPEG
+4.  What happens, technically speaking, when a file is deleted on a FAT file system? The machine "forgets" the location of the file by deleting the pointer to that file. The file remains intact until it is overwritten.
+5.  What can someone like you do to ensure (with high probability) that files you delete cannot be recovered? Use encryption to save files. 
+6.  What’s stdint.h? declares sets of integers to have standard widths.
+7.  What’s the point of using uint8_t, uint32_t, int32_t, and uint16_t in a program? A uint8_t is an unsigned int between 0 and 255. a uint32_t is an unsigned 32 bit int between 0 and 4294967295. a int32_t is a signed int between –2147483648 through 2147483647. unint16_t is an unsigned 16 bit integer between 0 through 65535. 
+8.  How many bytes is a BYTE, a DWORD, a LONG, and a WORD, respectively? BYTE is 1 byte. DWORD is 4 bytes. LONG is 4 bytes. WORD is 2 bytes.
+9.  What (in ASCII, decimal, or hexadecimal) must the first two bytes of any BMP file be? hexadecimal --> 0x42 0x4D, or BM in ASCII. 
+10. What’s the difference between bfSize and biSize? biSize is the size of an image. bfSize specifies the size, in bytes, of the bitmap file. biSize specifies the size of the structure in bytes. 
+11. What does it mean if biHeight is negative? If biHeight is negative, the bitmap is a top-down DIB (device-independent bitmap) and its origin is the upper left corner.
+12. What field in BITMAPINFOHEADER specifies the BMP’s color depth (i.e., bits per pixel)? biBitCount 
+13. Why might fopen return NULL in copy.c:37? fopen returns null if it doesn't file a file-pointer.
+14. Why is the third argument to fread always 1 in our code? Because each usage of fread only reads one struct of code, and the struct length is specified by the second argument. 
+15. What value does copy.c:70 assign padding if bi.biWidth is 3? biWidth is the width of the bitmap in pixels. If the width is not a multiple of 4, padding is added. 3 pixels X 3 bytesperpixel = 9 bytes, so padding must be added.
+16. What does fseek do? Finds a specific position in the file.
+17. What is SEEK_CUR? An integer constant that gives the offset (sort of like padding) relative to the current file. 
+18. Whodunit? Milo Banana dun it.
